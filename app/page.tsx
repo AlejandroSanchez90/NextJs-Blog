@@ -1,5 +1,7 @@
+import React from 'react';
+
 type Props = {};
 
-export default function HomePage({}: Props) {
-  return <div className='text-red-400'>BLOG INIT</div>;
+export default function page({}: Props) {
+  return <div>page</div>;
 }
