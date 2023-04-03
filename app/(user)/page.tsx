@@ -14,7 +14,7 @@ export const query = groq`
 type Props = {};
 
 export default async function page({}: Props) {
-  if (previewData() || !previewData())
+  if (previewData())
     return (
       <PreviewSuspense
         fallback={

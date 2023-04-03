@@ -8,6 +8,7 @@ type Props = {
 
 function PreviewBlogList({ query }: Props) {
   const posts = usePreview(null, query);
+
   return <BlogList posts={posts} />;
 }
 
