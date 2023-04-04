@@ -23,7 +23,7 @@ function Header({}: Props) {
       <div>
         <Link
           href='/'
-          className='px-5 py-3 text-sm md:text-base bg-gray-900 text-[#20c997] flex items-center rounded-full text-center'>
+          className='px-5 py-3 text-sm md:text-base bg-gray-900 text-primaryGreen flex items-center rounded-full text-center'>
           Sign up for news
         </Link>
       </div>

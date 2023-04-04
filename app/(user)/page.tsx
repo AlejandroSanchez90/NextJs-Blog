@@ -19,7 +19,9 @@ export default async function page({}: Props) {
       <PreviewSuspense
         fallback={
           <div role='status'>
-            <p className='text-center text-lg animate-pulse text-[#20c997]'>Loading preview data</p>
+            <p className='text-center text-lg animate-pulse text-primaryGreen'>
+              Loading preview data
+            </p>
           </div>
         }>
         <PreviewBlogList query={query} />

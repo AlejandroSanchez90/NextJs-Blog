@@ -7,11 +7,9 @@ type Props = {
 };
 
 function BlogList({ posts }: Props) {
-  console.log(posts.length);
-
   return (
     <div>
-      <hr className='border-[#20c997] mb-10' />
+      <hr className='border-primaryGreen mb-10' />
       <div className='grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24'>
         {posts.map((post) => (
           <ClientSideRoute route={`/post/${post.slug.current}`} key={post._id}>
@@ -39,7 +37,7 @@ function BlogList({ posts }: Props) {
                     {post.categories.map((category) => (
                       <div
                         key={category._id}
-                        className='bg-[#20c997] text-center text-black px-3 py-1 rounded-full text-sm font-semibold'>
+                        className='bg-primaryGreen text-center text-black px-3 py-1 rounded-full text-sm font-semibold'>
                         {category.title}
                       </div>
                     ))}
