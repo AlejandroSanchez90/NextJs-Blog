@@ -4,7 +4,7 @@ import { client } from '@/lib/sanity.client';
 import PreviewSuspense from '../../components/PreviewSuspense';
 import PreviewBlogList from '@/components/PreviewBlogList';
 import BlogList from '@/components/BlogList';
-export const query = groq`
+const query = groq`
   *[_type=='post'] {
     ...,
     author->,
@@ -12,6 +12,8 @@ export const query = groq`
   } | order(_createdAt desc)
 `;
 type Props = {};
+
+export const revalidate = 60;
 
 export default async function page({}: Props) {
   if (previewData())
